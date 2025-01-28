@@ -23,7 +23,7 @@ Reverse engineered MQTT client for Hisense TVs.
 
 # <samp>GUIDANCE</samp>
 
-### Import the Library
+### Import the library
 
 ```shell
 flutter pub add hisensor --git-url https://github.com/olankens/hisensor
