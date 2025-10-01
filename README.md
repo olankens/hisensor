@@ -1,6 +1,12 @@
 # <samp>OVERVIEW</samp>
 
-Reversed MQTT client for Hisense TVs.
+Reverse engineered MQTT client for Hisense TVs that helps you automatically set up picture profiles (SDR, HDR10, HDR+, and DOVI) after each firmware upgrade.
+
+This library uses a [dummy certificate and private key](lib/assets) to bypass broker authentication.
+
+Some TV models may require OTP-based permission.
+
+### Supported Platforms
 
 <table>
   <tr align="center">
@@ -21,38 +27,35 @@ Reversed MQTT client for Hisense TVs.
   </tr>
 </table>
 
-Helps me setting up my picture profiles (SDR, HDR10, HDR+ and DOVI) after each firmware upgrade. It uses dummy certificate and private key to foolish the broker authentication, some TV models require permission via OTP. It's an extremely naive solution, do not use it in production.
-
 # <samp>GUIDANCE</samp>
 
-### Import library
+### Import Library
 
 ```shell
 flutter pub add hisensor --git-url https://github.com/olankens/hisensor
 ```
 
-### Change current mode
-
-Sadly, there is no way to determine the current mode.
+### Change Current Mode
 
 ```dart
 var client = Client('television_ip_address_here', foolish: true);
 await client.attach();
-await client.changePictureMode(PictureMode.cinemaNight);
-await client.revertPictureMode();
-await client.changeApplyPicture(ApplyPicture.all);
-await client.changeLocalDimming(LocalDimming.off);
-await client.changeBacklight(40);
-await client.changeBrightness(50);
-await client.changeContrast(70);
-await client.changeColorSaturation(50);
-await client.changeSharpness(5);
-await client.changeAdaptiveContrast(AdaptiveContrast.off);
-await client.changeUltraSmoothMotion(UltraSmoothMotion.off);
-await client.changeNoiseReduction(NoiseReduction.off);
-await client.changeColorTemperature(ColorTemperature.warm1);
-await client.changeColorGamut(ColorGamut.native);
-await client.changeGammaAdjustment(GammaAdjustment.gamma22);
-await client.toggleViewingAngle();
+await client
+  ..changePictureMode(PictureMode.cinemaNight)
+  ..revertPictureMode()
+  ..changeApplyPicture(ApplyPicture.all)
+  ..changeLocalDimming(LocalDimming.off)
+  ..changeBacklight(40)
+  ..changeBrightness(50)
+  ..changeContrast(70)
+  ..changeColorSaturation(50)
+  ..changeSharpness(5)
+  ..changeAdaptiveContrast(AdaptiveContrast.off)
+  ..changeUltraSmoothMotion(UltraSmoothMotion.off)
+  ..changeNoiseReduction(NoiseReduction.off)
+  ..changeColorTemperature(ColorTemperature.warm1)
+  ..changeColorGamut(ColorGamut.native)
+  ..changeGammaAdjustment(GammaAdjustment.gamma22)
+  ..toggleViewingAngle();
 await client.detach();
 ```
