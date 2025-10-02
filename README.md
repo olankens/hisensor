@@ -1,9 +1,7 @@
 # <samp>OVERVIEW</samp>
 
 Reverse engineered MQTT client for Hisense TVs that helps you automatically set up picture profiles (SDR, HDR10, HDR+, and DOVI) after each firmware upgrade.
-
 This library uses a [dummy certificate and private key](lib/assets) to bypass broker authentication.
-
 Some TV models may require OTP-based permission.
 
 ### Supported Platforms
