@@ -1,20 +1,25 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".assets/icon-dark.png">
+    <img src=".assets/icon-light.png" width="144">
+  </picture>
+</p>
+
+<h1 align="center"><samp>HISENSOR</samp></h1>
+
+<p align="center">Reverse engineered MQTT client for Hisense TVs that helps you automatically set up picture profiles (SDR, HDR10, HDR+, and DOVI) after each firmware upgrade. This library uses a dummy certificate and private key to bypass broker authentication. Some TV models may require OTP-based permission.</p>
+
 <hr>
 
-# OVERVIEW
-
-Reverse engineered MQTT client for Hisense TVs that helps you automatically set up picture profiles (SDR, HDR10, HDR+, and DOVI) after each firmware upgrade. This library uses a [dummy certificate and private key](lib/assets) to bypass broker authentication. Some TV models may require OTP-based permission.
-
-<hr>
-
-# GUIDANCE
-
-### Import Library
+<h3 align="center">Import Library</h3>
 
 ```shell
 flutter pub add hisensor --git-url https://github.com/olankens/hisensor
 ```
 
-### Change Current Mode
+<hr>
+
+<h3 align="center">Change Current Mode</h3>
 
 ```dart
 var client = Client('television_ip_address_here', foolish: true);
@@ -38,5 +43,3 @@ await client
   ..toggleViewingAngle();
 await client.detach();
 ```
-
-<hr>
