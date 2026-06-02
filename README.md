@@ -4,7 +4,7 @@
   <p><img src=".assets/icon.svg" width="128"/></p>
   <sub>LIBRARY</sub>
   <h1>HISENSOR</h1>
-  <p>Automate Hisense TV picture profile setup for SDR, HDR10, HDR+, and Dolby Vision via reverse engineered MQTT client with dummy certificate to bypass broker authentication. Some models need OTP permission.</p>
+  <p>Dart library for Hisense U7QF TV that automates picture profile setup for SDR, HDR10, HDR+, and Dolby Vision via reverse engineered MQTT client with dummy certificate to bypass broker authentication.</p>
 </div>
 
 <hr>
