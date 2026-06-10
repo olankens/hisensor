@@ -35,18 +35,23 @@
 
 ### LEARNING
 
-#### Importing Package
+#### Installing Pub Package
 
 ```sh
 flutter pub add senchard --git-url https://github.com/olankens/senchard
 ```
 
-#### Changing Current Mode
+#### Instantiating the Client
 
 ```dart
 var client = Client('television_ip_address_here', foolish: true);
-await client.attach();
+```
+
+#### Updating Picture Mode
+
+```dart
 await client
+  ..attach()
   ..changePictureMode(PictureMode.cinemaNight)
   ..revertPictureMode()
   ..changeApplyPicture(ApplyPicture.all)
@@ -62,6 +67,6 @@ await client
   ..changeColorTemperature(ColorTemperature.warm1)
   ..changeColorGamut(ColorGamut.native)
   ..changeGammaAdjustment(GammaAdjustment.gamma22)
-  ..toggleViewingAngle();
-await client.detach();
+  ..toggleViewingAngle()
+  ..detach();
 ```
