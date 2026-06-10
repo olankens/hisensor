@@ -1,7 +1,7 @@
-name: hisensor
-description: MQTT client for Hisense TVs
+name: senchard
+description: Dart library for Hisense U7QF TV to very fully automate picture profile setup process for SDR, HDR10, HDR+, and Dolby Vision content via a reverse engineered MQTT client with a reliable dummy certificate that can bypass broker authentication.
 version: 0.1.0
-homepage: https://github.com/olankens/hisensor
+homepage: https://github.com/olankens/senchard
 
 environment:
   sdk: ">=2.17.6 <3.0.0"

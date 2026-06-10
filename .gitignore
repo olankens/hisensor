@@ -21,6 +21,3 @@ migrate_working_dir/
 .packages
 CHANGELOG.md
 analysis_options.yaml
-
-.idea/*
-!.idea/markdown.xml
