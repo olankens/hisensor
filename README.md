@@ -33,37 +33,6 @@
   </tr></tbody>
 </table>
 
-### FEATURES
-
-<table>
-  <tbody><tr><td width="99999">Attach local television</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Bridge with pairing code</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change television source</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Detach local television</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Gather source inputs</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Launch key codes</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change adaptive contrast</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change apply picture</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change backlight</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change brightness</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change color gamut</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change color temperature</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change color saturation</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change contrast</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change gamma adjustment</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change HDMI format</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change local dimming</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change noise reduction</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change picture mode</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change sharpness</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change ultra smooth motion</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Change white balance</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Handle consumption alert</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Revert picture mode</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Revert white balance</td><td align="center">✅</td></tr></tbody>
-  <tbody><tr><td>Toggle view angle feature</td><td align="center">✅</td></tr></tbody>
-</table>
-
 ### LEARNING
 
 #### Importing Package
